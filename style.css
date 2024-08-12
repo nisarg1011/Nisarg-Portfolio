@@ -1,0 +1,316 @@
+/* General Styles */
+
+/* Basic reset for navigation menu */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Navigation menu styles */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed; /* Fixes the navbar to the top of the viewport */
+    top: 0; /* Positions it at the top */
+    left: 0; /* Aligns it to the left edge */
+    right: 0; /* Ensures it spans the full width */
+    z-index: 1000; /* Makes sure it stays above other content */
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu li {
+    display: inline;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    background-color: #555;
+    color: #ffcc00;
+}
+
+section {
+    padding: 50px 20px;
+    margin-top: 60px; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1f4037, #99f2c8);
+    color: #f0f0f0;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+h2 {
+    color: #f0f0f0;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    letter-spacing: 1.5px;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    width: 80px;
+    height: 5px;
+    background: #ffcc00;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #e0e0e0;
+}
+
+/* Header */
+header {
+    background: radial-gradient(circle, #141e30, #243b55);
+    color: #fff;
+    padding: 80px 0;
+    text-align: center;
+    position: relative;
+    animation: gradientShift 10s infinite alternate;
+}
+
+@keyframes gradientShift {
+    0% {
+        background: radial-gradient(circle, #141e30, #243b55);
+    }
+    100% {
+        background: radial-gradient(circle, #203a43, #2c5364);
+    }
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #ffcc00;
+    margin-bottom: 20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.7);
+    /* animation: imageMove 5s infinite alternate; */
+}
+
+
+
+header h1 {
+    margin: 20px 0 10px;
+    font-size: 3em;
+    font-weight: 700;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+    /* animation: textMove 5s infinite alternate; */
+}
+
+
+
+header p {
+    font-size: 1.3em;
+    margin: 10px 0;
+    font-weight: 300;
+    animation: textMove 5s infinite alternate;
+}
+
+.social-links a {
+    color: #ffcc00;
+    margin: 0 20px;
+    font-size: 2em;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+    color: #ff6f00;
+}
+
+.social-links i {
+    display: inline-block;
+    vertical-align: middle;
+}
+/* Section Styles */
+section {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    text-align: center;
+}
+
+section:nth-child(even) {
+    background: linear-gradient(135deg, #243b55, #141e30);
+}
+
+.job, .project {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    margin: 20px 0;
+    border-left: 8px solid #ffcc00;
+    box-shadow: 0px 0px 20px 0px #000;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.job:hover, .project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.2);
+}
+
+.job h3, .project h3 {
+    margin-top: 0;
+    color: #ffcc00;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.job p, .project p {
+    margin-bottom: 15px;
+    color: #e0e0e0;
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.skill {
+    flex: 1 1 20%;
+    margin: 20px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    border-radius: 10px;
+    /* animation: scrollSkills 20s linear infinite; */
+}
+
+
+
+
+/* Projects Section */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project {
+    flex: 1 1 calc(33.333% - 40px);
+    margin: 20px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 8px solid #ffcc00;
+    margin-bottom: 20px;
+    animation: imageMove 5s infinite alternate;
+}
+
+.project h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #ffcc00;
+}
+
+.project p {
+    font-size: 1.1em;
+    color: #e0e0e0;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+    background: #141e30;
+    color: #ffcc00;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.2em;
+    margin-top: 60px;
+    box-shadow: 0 -2px 15px rgba(0, 0, 0, 0.5);
+}
+
+footer p {
+    margin: 0;
+    font-weight: 300;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1.2em;
+    }
+
+    .skills-container, .projects-container {
+        flex-direction: column;
+    }
+
+    .skill, .project {
+        flex: 1 1 100%;
+    }
+}
