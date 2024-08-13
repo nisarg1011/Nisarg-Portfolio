@@ -277,6 +277,18 @@ section:nth-child(even) {
     box-shadow: 0 25px 35px rgba(0, 0, 0, 0.3);
 }
 
+.contact-icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 15px;
+    transition: transform 0.3s;
+}
+
+.contact-icon:hover {
+    transform: scale(1.2);
+}
+
+
 /* Footer */
 footer {
     background: #141e30;
